@@ -13,5 +13,5 @@
     "autoload": {
         "psr-0": {"Elcweb\\Monolog\\FluentdBundle\\": ""}
     },
-    "target-dir" : "Elcweb/Monolog/MonologFluentdBundle"
+    "target-dir" : "Elcweb/Monolog/FluentdBundle"
 }
