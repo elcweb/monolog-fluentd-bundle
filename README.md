@@ -43,6 +43,11 @@ public function registerBundles()
 ### Step 3: configuration
 
 config.yml
+    monolog:
+        handlers:
+            fluentd:
+                type: service
+                id: monolog_fluentd.monolog_handler
 
     elcweb_monolog_fluentd:
         host: %monolog_fluentd_host%
