@@ -1,0 +1,17 @@
+parameters:
+    monolog_fluentd.fluentd.port: 24224
+    monolog_fluentd.fluentd.host: localhost
+    monolog_fluentd.fluentd.bubble: true
+    monolog_fluentd.fluentd.env: none
+    monolog_fluentd.fluentd.tag: backend
+
+services:
+    monolog_fluentd.monolog_handler:
+        class: Elcweb\Monolog\FluentdBundle\Monolog\Handler\MonologFluentdHandler
+        arguments:
+            - "%monolog_fluentd.fluentd.port%"
+            - "%monolog_fluentd.fluentd.host%"
+            - "%monolog_fluentd.fluentd.level%"
+            - "%monolog_fluentd.fluentd.bubble%"
+            - "%monolog_fluentd.fluentd.env%"
+            - "%monolog_fluentd.fluentd.tag%"

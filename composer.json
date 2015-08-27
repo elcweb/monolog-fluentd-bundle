@@ -1,0 +1,17 @@
+{
+    "name": "elcweb/monolog-fluentd-bundle",
+    "description": "Symfony2 Bundle to let Monolog support Fluentd",
+    "type": "bundle",
+    "license": "MIT",
+    "authors": [
+        { "name": "Etienne Lachance", "email": "el@elcweb.ca" }
+    ],
+    "require": {
+        "symfony/monolog-bundle": "*",
+        "fluent/logger": "0.3.*"
+    },
+    "autoload": {
+        "psr-0": {"Elcweb\\Monolog\\FluentdBundle\\": ""}
+    },
+    "target-dir" : "Elcweb/Monolog/MonologFluentdBundle"
+}
