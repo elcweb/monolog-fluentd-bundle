@@ -12,7 +12,7 @@ Installation
 ```js
 {
     "require": {
-        "elcweb/monolog-fluentd-bundle": "~1.0"
+        "elcweb/monolog-fluentd-bundle": "0.0.*"
     }
 }
 ```
